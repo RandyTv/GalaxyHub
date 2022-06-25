@@ -1,6 +1,6 @@
 game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "Galaxy Hub"; Text = "Made by Clover King#6209"; })
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Galaxy Sky Community", "Ocean")
+local Window = Library.CreateLib("Galaxy Sky Community", "GrapeTheme")
 
 ---Main
 local Main = Window:NewTab("Main")
@@ -23,7 +23,13 @@ end)
 BasicSection:NewButton("Reset JumpPower", "Resets your JumpPower", function(rj)
     game.Players.LocalPlayer.Character.Humanoid.JumpPower = 20
 end)
----Fe Script's
+BasicSection:NewTextBox("Teleport To Player", "Write the User of the Player", function(txt)
+local p1 = game.Players.LocalPlayer.Character.HumanoidRootPart
+local p2 = "InsertPlayerHere" == (txt)
+
+p1.CFrame = game.Players[p2].Character.HumanoidRootPart.CFrame
+end)
+---Fe Script's 
 
 local FE = Window:NewTab("FE")
 local FESection = FE:NewSection("FE Scripts")
@@ -133,7 +139,7 @@ end)
 
 ---Pet Simulator X
 local PetSimX = Window:NewTab("Pet Simulator X")
-local PetSimXSection = PetSimX:NewSection("PetSimX")
+local PetSimXSection = PetSimX:NewSection("PetSimX Hubs")
 PetSimXSection:NewButton("Saza Hub", "Saza Hub Script", function()
 _G.Color = Color3.fromRGB(255, 255, 255)
 loadstring(game:HttpGet"https://rawscripts.net/raw/SAZA-HUB_496")()
@@ -146,4 +152,33 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/ThunderZ-HUB/HUB/main
 end)
 PetSimXSection:NewButton("Delta PSX", "Delta PSX Script", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/lxnnydev/Delta-PSX/main/loader.lua"))();
+end)
+
+---BrookHaven
+
+local BrookHaven = Window:NewTab("BrookHaven")
+local BrookHavenSection = BrookHaven:NewSection("BrookHaven")
+BrookHavenSection:NewButton("VHub", "VHub Script", function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/itsyaboivincentt5315/script/main/VHub.txt'),true))()
+end)
+BrookHavenSection:NewButton("Spy", "Spy Script", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/MichaelScripter/MiniScript/main/Spy%20gui.lua"))()
+end)
+BrookHavenSection:NewButton("TP", "TP Script", function()
+loadstring(game:HttpGet("https://gist.githubusercontent.com/DagerFild/b4776075a0d26ef04394133ee6bd2081/raw/0ed51ac94057d2d9a9f00e1b037b9011c76ca54a/tpGUI", true))()
+end)
+BrookHavenSection:NewButton("MoonUI", "MoonUI Script", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/IlikeyocutgHAH12/MoonUI-v10-/main/MoonUI%20v10'))()
+end)
+BrookHavenSection:NewButton("IceHub", "IceHub Script", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/IceMael7/NewIceHub/main/Brookhaven"))()
+end)
+BrookHavenSection:NewButton("Egg Finder", "Egg Finder Script", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/8ybpq3nC",true))()
+end)
+BrookHavenSection:NewButton("House Gui", "House Gui Script", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ChillSoftworks/Houseg/main/Housegui"))()
+end)
+BrookHavenSection:NewButton("Idk the Hub", "Idk the Hub Script", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/ExecutiveRat/2nd-Try/main/Idk%20the%20hub'))()
 end)
