@@ -349,5 +349,168 @@ elseif game.PlaceId == 4924922222 then
 	  end
 	})
 
+
+	--Arsenal
+elseif game.PlaceId == 286090429 then
+	local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+	local Window = OrionLib:MakeWindow({Name = "Galaxy Hub | Arsenal", HidePremiumUser = false, IntroText = "GalaxyHub Loaded", SaveConfig = true, ConfigFolder = "PetSimulatorXConfig"})
+	local home = Window:MakeTab({
+	Name = "Home",
+	Icon = "rbxassetid://9405923687",
+	PremiumOnly = false
+	})
+	local homeSection = home:AddSection({
+	Name = "Home Area"
+	})
+	home:AddLabel("Join Our Community Copy invite below")
+	home:AddButton({
+	Name = "Copy Invite!",
+	Callback = function()
+		setclipboard(tostring('https://discord.gg/USvbWS2E2A'))
+	  end
+	})
+	
+	local script = Window:MakeTab({
+	Name = "Script's",
+	Icon = "rbxassetid://9405930424",
+	PremiumOnly = false
+	})
+	local scriptSection = script:AddSection({
+	Name = "Script's Area"
+	})
+	script:AddButton({
+	Name = "Dex Hub",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/HonestlyDex/DexHub/main/V3.lua"))()
+	  end
+	})
+	script:AddButton({
+	Name = "Owl Hub",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
+	end
+	})
+	script:AddButton({
+	Name = "Darkrai X",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/arsenal-hub/main/Arsenal%20GamingScripter", true))()
+	  end
+	})
+	script:AddButton({
+	Name = "Dark Hub",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init", true))()
+	  end
+	})
+	script:AddButton({
+	Name = "Bolts Hub",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/fusiongreg/BoltsHubV5/main/Main", true))()
+	  end
+	})
+
+	local settings = Window:MakeTab({
+	Name = "Setting",
+	Icon = "rbxassetid://9753762469",
+	PremiumOnly = false
+	})
+	local settingsSection = settings:AddSection({
+	Name = "Settings Area"
+	})
+	settings:AddColorpicker({
+	Name = "Colorpicker",
+	Default = Color3.fromRGB(255, 0, 0),
+	Callback = function(Value)
+	
+	end
+	})
+	settings:AddButton({
+	Name = "FPS Boost",
+	Callback = function()
+			  print("No script")
+	  end
+	})
+
+--Mining Simulator 2
+elseif game.PlaceId == 9551640993 then
+	local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+	local Window = OrionLib:MakeWindow({Name = "Galaxy Hub | Mining Simulator 2", HidePremiumUser = false, IntroText = "GalaxyHub Loaded", SaveConfig = true, ConfigFolder = "PetSimulatorXConfig"})
+	local home = Window:MakeTab({
+	Name = "Home",
+	Icon = "rbxassetid://9405923687",
+	PremiumOnly = false
+	})
+	local homeSection = home:AddSection({
+	Name = "Home Area"
+	})
+	home:AddLabel("Join Our Community Copy invite below")
+	home:AddButton({
+	Name = "Copy Invite!",
+	Callback = function()
+		setclipboard(tostring('https://discord.gg/USvbWS2E2A'))
+	  end
+	})
+	
+	local script = Window:MakeTab({
+	Name = "Script's",
+	Icon = "rbxassetid://9405930424",
+	PremiumOnly = false
+	})
+	local scriptSection = script:AddSection({
+	Name = "Script's Area"
+	})
+	script:AddButton({
+	Name = "System Exodus",
+	Callback = function()
+		loadstring(game:HttpGet("https://system-exodus.com/scripts/MiningSimulator/MiningSimulator2.lua", true))()
+	  end
+	})
+	script:AddButton({
+	Name = "Rolly Scripts Gui",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/XRoLLu/UWU/main/MS2_WHAT.lua"))()
+	end
+	})
+	script:AddButton({
+	Name = "Saza SoftWare",
+	Callback = function()
+		loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-DonateMe-3327"))()SZInjected(SZLoader)()
+	  end
+	})
+	script:AddButton({
+	Name = "Vestra Hub",
+	Callback = function()
+		loadstring(game:HttpGet("https://script.vestrahub.xyz",true))()
+	  end
+	})
+	script:AddButton({
+	Name = "STRELIZIA",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Strelizia22/Strelizia/main/MS2Main.lua", true))()
+	  end
+	})
+	
+	local settings = Window:MakeTab({
+	Name = "Setting",
+	Icon = "rbxassetid://9753762469",
+	PremiumOnly = false
+	})
+	local settingsSection = settings:AddSection({
+	Name = "Settings Area"
+	})
+	settings:AddColorpicker({
+	Name = "Colorpicker",
+	Default = Color3.fromRGB(255, 0, 0),
+	Callback = function(Value)
+	
+	end
+	})
+	settings:AddButton({
+	Name = "FPS Boost",
+	Callback = function()
+			  print("No script")
+	  end
+	})
+
 OrionLib:Init()
 end
